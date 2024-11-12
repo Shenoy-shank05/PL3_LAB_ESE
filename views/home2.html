@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walchand College of Engineering, Sangli</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4f7, #c2d6ff);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            background-color: #3498db;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980b9;
+        }
+
+        .container {
+            margin-top: 80px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.8em;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Slideshow styling */
+        .slideshow-container {
+            width: 400px;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Fade animation */
+        .fade {
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {opacity: 0.4;}
+            to {opacity: 1;}
+        }
+
+        /* Department section styling */
+        .departments {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .department {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .department h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .department p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#tothis">Departments</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="./walchand.png" alt="College Logo" class="logo">
+        <h1>Welcome to Walchand College of Engineering, Sangli</h1>
+        <a href="student_form.html">Fill Student Information</a>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="./1584487094492.jpg" alt="College Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="./94d65981-b031-417c-8d42-be91682e0689-1587651416.jpg" alt="College Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="./1478685416w7.jpg" alt="College Image 3">
+        </div>
+        <div class="slide fade">
+            <img src="./WCE-Sangli.webp" alt="College Image 4">
+        </div>
+        <div class="slide fade">
+            <img src="./94d65981-b031-417c-8d42-be91682e0689-1587651416.jpg" alt="College Image 5">
+        </div>
+    </div>
+
+    <!-- Department Section -->
+    <div class="departments" id="tothis">
+        <div class="department">
+            <h3>Computer Science Engineering</h3>
+            <p>Our department offers cutting-edge courses in programming, AI, and system design, fostering innovation and creativity in tech.</p>
+        </div>
+        <div class="department">
+            <h3>Information Technology Engineering</h3>
+            <p>Offers cutting-edge courses in programming, AI, and system design, fostering innovation and creativity in tech.</p>
+        </div>
+        <div class="department">
+            <h3>Mechanical Engineering</h3>
+            <p>Focused on developing practical and theoretical skills, preparing students for careers in design, automation, and manufacturing industries.</p>
+        </div>
+        <div class="department">
+            <h3>Civil Engineering</h3>
+            <p>Our Civil Engineering department is committed to providing knowledge in infrastructure planning, construction, and sustainable development.</p>
+        </div>
+        <div class="department">
+            <h3>Electrical Engineering</h3>
+            <p>Electrical Engineering students learn to design, develop, and manage electrical systems and technologies in various industries.</p>
+        </div>
+        <div class="department">
+            <h3>Electronics and Telecommunication</h3>
+            <p>Preparing students for advancements in communication technology and electronic systems with both theoretical and practical learning.</p>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+
+            // Hide all slides initially
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            // Reset to the first slide after the last one
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // Show the current slide
+            slides[slideIndex - 1].style.display = "block";
+
+            // Change slide every 3 seconds
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+</html>
